@@ -1,0 +1,5 @@
+LOAD DATA LOCAL INFILE '/data/cds/loads/fact.0.csv'
+INTO TABLE fact
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+(experiment_record_id,trial_id,event_time,entity_id,attribute_id,value); 

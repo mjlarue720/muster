@@ -1,0 +1,29 @@
+use cds_dev;
+
+create unique index exeriment_index
+  on experiment_dimension (name,version);
+
+create unique index exeriment_attribute_index
+  on experiment_attribute_dimension (experiment_id, name);
+
+
+
+use cds_test;
+
+create unique index exeriment_index
+  on experiment_dimension (name,version);
+
+create unique index exeriment_attribute_index
+  on experiment_attribute_dimension (experiment_id, name);
+
+
+
+use cds_prod;
+
+create unique index exeriment_index
+  on experiment_dimension (name,version);
+
+create unique index exeriment_attribute_index
+  on experiment_attribute_dimension (experiment_id, name);
+
+

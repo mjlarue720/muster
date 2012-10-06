@@ -1,0 +1,7 @@
+drop database if exists cds_prod;
+create database cds_prod;
+grant all on cds_prod.* to 'gvamos'@'localhost' identified by '';
+grant all on cds_prod.* to 'tomcat'@'localhost' identified by '';
+grant all on cds_prod.* to 'dennis'@'localhost' identified by '';
+grant all on cds_prod.* to 'test'@'localhost' identified by '';
+flush privileges;

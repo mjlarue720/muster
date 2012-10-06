@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql
+END
+reset.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql/reset.sql
+END
+cds_dev.sql
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql/cds_dev.sql
+END
+index.sql
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql/index.sql
+END
+FactView.sql
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql/FactView.sql
+END
+cds_test.sql
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql/cds_test.sql
+END
+cds.sql
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql/cds.sql
+END
+importfacts.sql
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql/importfacts.sql
+END
+cds_prod.sql
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql/cds_prod.sql
+END
+fact.sql
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql/fact.sql
+END
+sqlscript.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/projects/!svn/ver/15111/cds/3.2/tags/3.2.7.X_RC4/sql/sqlscript.sh
+END

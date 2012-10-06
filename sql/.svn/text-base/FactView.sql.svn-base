@@ -1,0 +1,39 @@
+
+DROP TABLE IF EXISTS fact_view;
+DROP VIEW IF EXISTS fact_view;
+CREATE OR REPLACE ALGORITHM = UNDEFINED VIEW fact_view AS
+
+  SELECT
+     f.id as id,
+     s.name  as session_name,
+     er.experiment_id as experiment_id,
+     er.id as experiment_record_id,
+     er.experiment_name as experiment_name,
+     
+     er.subject_identifier as subject_identifier,
+     er.time_stamp as file_date,
+
+     f.trial_id as trial_id,
+     f.entity_id as entity_id,
+     f.event_time as event_time,
+
+     f.attribute_id as attribute_id,
+     f.value as value
+
+  FROM
+    experiment_record_dimension er,
+    fact f,
+    session_dimension s
+
+
+  WHERE f.experiment_record_id = er.id
+  AND   er.session_id = s.id
+
+  ORDER BY file_date,id ASC
+  ;
+
+--select * from fact_view where subject_identifier = "11-001" and experiment_name = "impedance";
+--select count(*) from fact_view where subject_identifier = "11-001" and experiment_name = "impedance";
+
+--select * from fact_view_extended where subject_identifier = "51-005" and experiment_name = "impedance";
+

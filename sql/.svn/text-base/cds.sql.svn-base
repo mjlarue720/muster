@@ -1,0 +1,28 @@
+drop database if exists cds_test;
+create database cds_test;
+grant all on cds_test.* to 'gvamos'@'localhost' identified by '';
+grant all on cds_test.* to 'tomcat'@'localhost' identified by '';
+grant all on cds_test.* to 'dennis'@'localhost' identified by '';
+grant all on cds_test.* to 'dcheung'@'localhost' identified by '';
+grant all on cds_test.* to 'nvyas'@'localhost' identified by '';
+grant all on cds_test.* to 'test'@'localhost' identified by '';
+
+drop database if exists cds_prod;
+create database cds_prod;
+grant all on cds_prod.* to 'gvamos'@'localhost' identified by '';
+grant all on cds_prod.* to 'tomcat'@'localhost' identified by '';
+grant all on cds_prod.* to 'dennis'@'localhost' identified by '';
+grant all on cds_prod.* to 'dcheung'@'localhost' identified by '';
+grant all on cds_prod.* to 'nvyas'@'localhost' identified by '';
+grant all on cds_prod.* to 'test'@'localhost' identified by '';
+
+drop database if exists cds_dev;
+create database cds_dev;
+grant all on cds_dev.* to 'gvamos'@'localhost' identified by '';
+grant all on cds_dev.* to 'tomcat'@'localhost' identified by '';
+grant all on cds_dev.* to 'dennis'@'localhost' identified by '';
+grant all on cds_dev.* to 'dcheung'@'localhost' identified by '';
+grant all on cds_dev.* to 'nvyas'@'localhost' identified by '';
+grant all on cds_dev.* to 'test'@'localhost' identified by '';
+flush privileges;
+

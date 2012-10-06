@@ -1,0 +1,37 @@
+Muster objects:
+
+class Person
+
+  String name
+  String description
+
+
+class AffinityGroup
+  
+  String name
+  String description
+
+
+ class RelPersonAffinity
+
+   Person person
+   AffinityGroup affinityGroup
+   String status
+
+ class Event
+
+   String name
+   String descriptioan
+   Date eventDate
+   String location
+   String state
+   Integer quorum
+   Integer numberCommitted
+
+ class Invite
+ 
+   Person person
+   Event event
+   String OrgRole
+   String status
+

@@ -7,6 +7,7 @@ class Event {
    Date eventDate
    String location
    String state
+   String status
    Integer quorum
 //   Integer numberCommitted
 
@@ -16,6 +17,7 @@ class Event {
       description()
       location()
       state()
+      status()
       quorum()
 //      numberComitted()
     }

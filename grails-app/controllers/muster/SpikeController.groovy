@@ -4,6 +4,8 @@ import org.springframework.dao.DataIntegrityViolationException
 
 class SpikeController {
 
+  def SecretaryService secretaryService
+
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def index() {
@@ -98,5 +100,25 @@ class SpikeController {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'spike.label', default: 'Spike'), id])
             redirect(action: "show", id: id)
         }
+    }
+
+    def test1 = {
+
+      Event.list()*.delete()
+      Date eventDate = new Date()
+      Event event1 =  secretaryService.createEvent("Golf", "Play Golf", eventDate, "Golf course", 4)
+      Event event2
+      Boolean caught = Boolean.FALSE
+      try{
+        event2 = secretaryService.createEvent("Golf", "Play Golf", eventDate, "Golf course", 4)
+        println("duplicate event not caught")
+
+      }catch(Exception e){
+        caught = Boolean.TRUE
+      }
+      println(caught)
+      println("test passed")
+      render "successful"
+
     }
 }

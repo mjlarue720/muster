@@ -95,4 +95,17 @@ class SecretaryService {
     invite.save()
   }
 
+  def void processResponses(Event event){
+    List<Invite>invitations = Invite.findAllByEvent(event)
+    Integer acceptCount = 0
+    Integer rejectCount = 0
+    for (Invite invitation: invitations){
+      if (invitation.status.equals(Invite.STATUS_ACCEPTED)){
+        acceptCount++
+      }
+    }
+    event.quorum = acceptCount
+    event.save()
+  }
+
 }

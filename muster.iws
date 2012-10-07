@@ -280,7 +280,7 @@
       <file leaf-file-name="SecretaryService.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.04761905">
+            <state line="107" column="16" selection-start="3317" selection-end="3317" vertical-scroll-proportion="0.8095238">
               <folding />
             </state>
           </provider>
@@ -833,7 +833,11 @@
       <created>1349577855452</created>
       <updated>1349577855452</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Invite group members">
+      <created>1349578831485</created>
+      <updated>1349578831485</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -906,7 +910,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revisions to inite and respond to invite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Invite group members" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -926,6 +930,7 @@
     <MESSAGE value="Add initial event services" />
     <MESSAGE value="Add organizer invites person&#10;Add organizer invite grooup" />
     <MESSAGE value="Revisions to inite and respond to invite" />
+    <MESSAGE value="Invite group members" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1016,7 +1021,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.04761905">
+        <state line="107" column="16" selection-start="3317" selection-end="3317" vertical-scroll-proportion="0.8095238">
           <folding />
         </state>
       </provider>

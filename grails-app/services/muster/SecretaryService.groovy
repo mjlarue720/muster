@@ -39,11 +39,15 @@ class SecretaryService {
     return event
   }
 
-  //TODO INCOMPLETE
   def Boolean organizerInviteGroup(Person organizer, Event event, AffinityGroup affinityGroup) {
     Invite masterInvite = Invite.findByPersonAndEvent(organizer,event);
     if (masterInvite == null || !masterInvite.orgRole.equals(Invite.ORGANIZER)){
       return Boolean.FALSE
+    }
+    List<Person>groupMembers = RelPersonAffinity.findByAffinityGroup(affinityGroup)
+
+    for (Person invitee: groupMembers) {
+      organizerInvitePerson(organizer,event,invitee)
     }
     return Boolean.TRUE
 

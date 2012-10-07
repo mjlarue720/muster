@@ -1,5 +1,7 @@
 package muster
 
+import muster.Util
+
 class GeoController {
 
     def index() { }

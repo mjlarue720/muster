@@ -3,9 +3,7 @@ package muster
 class EventController {
     static scaffold = true
     
-    def SecretaryService secretaryService
-    
-    def listUserEvents = {
+    def listEvent = {
         
         Map<String>parameters = params
         String userName, password
@@ -25,9 +23,8 @@ class EventController {
         }
         
         println userName
-        List<Event> events = secretaryService.eventsForPerson(userName)
-        [events: events]
-           
+        
+        
         
     }
 }

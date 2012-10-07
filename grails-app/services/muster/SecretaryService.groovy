@@ -8,7 +8,7 @@ class SecretaryService {
   }
 
 
-  def Event createEvent(String name, String description, Date eventDate, String location, Integer quorum){
+  def Event createEvent(Person organizer, String name, String description, Date eventDate, String location, Integer quorum){
 
     Event event = Event.findByNameAndEventDate(name,eventDate)
     if (event != null){
@@ -36,6 +36,8 @@ class SecretaryService {
       }
       KeyException("Validation error " + name + ":" + eventDate.toString())
     }
+    Invite organizernvite = new Invite([organizer,event:event,orgRole:Invite.ORGANIZER,status:Invite.STATUS_ACCEPTED])
+
     return event
   }
 
@@ -77,13 +79,7 @@ class SecretaryService {
     if (person == null){
       return new ArrayList<Event>()
     } else {
-        List<Event> listOfEvents = new ArrayList<Event>()
-        Invite.findAllByPerson(person).each {
-            Invite thisInvite = it
-            Event thisEvent = thisInvite.event
-            listOfEvents.add(thisEvent)
-        }
-        return listOfEvents
+      return Invite.findAllByPerson(person)
     }
   }
 
@@ -92,13 +88,7 @@ class SecretaryService {
     if (person == null){
       return new ArrayList<Event>()
     } else {
-      List<Event> listOfEvents = new ArrayList<Event>()
-      Invite.findAllByPersonAndOrgRole(person,orgRole).each {
-        Invite thisInvite = it
-        Event thisEvent = thisInvite.event
-        listOfEvents.add(thisEvent)
-      }
-      return listOfEvents
+      return Invite.findAllByPersonAndOrgRole(person)
     }
   }
 

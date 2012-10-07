@@ -39,15 +39,33 @@ class SecretaryService {
     return event
   }
 
-
-  def void organizerInviteGroup(Person organizer, Event event, AffinityGroup affinityGroup) {
-    // Make sure a person has an invitation to the event
+  //TODO INCOMPLETE
+  def Boolean organizerInviteGroup(Person organizer, Event event, AffinityGroup affinityGroup) {
+    Invite masterInvite = Invite.findByPersonAndEvent(organizer,event);
+    if (masterInvite == null || !masterInvite.orgRole.equals(Invite.ORGANIZER)){
+      return Boolean.FALSE
+    }
+    return Boolean.TRUE
 
   }
 
-  def void organizerInvitePerson (Person organizer, Event event, Person person) {
-    // Make sure person is invited to meeting
-
+  def Boolean organizerInvitePerson (Person organizer, Event event, Person guest) {
+    Invite masterInvite = Invite.findByPersonAndEvent(organizer,event)
+    if (masterInvite == null || !masterInvite.orgRole.equals(Invite.ORGANIZER)){
+      return Boolean.FALSE
+    }
+    Invite guestInvite = Invite.findByPersonAndEvent(organizer,guest);
+    if (guestInvite == null){
+      guestInvite = new Invite([person:guest,event:event,orgRole:Invite.GUEST,status:Invite.STATUS_OPEN])
+    }
+    if (guestInvite.validate()) {
+      guestInvite.save(true)
+    }
+    else {
+      guestInvite.errors.allErrors.each { println it }
+      throw new MusterRuntimeException("Error:  Cannot save guest invite");                                                                                           U
+    }
+    return Boolean.TRUE
   }
 
   def List<Event> eventsForPerson(String name){
@@ -68,6 +86,9 @@ class SecretaryService {
     }
   }
 
-
+  def void respondToInvitation(Invite invite, String status){
+    invite.setStatus(status)
+    invite.save()
+  }
 
 }

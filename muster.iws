@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ece1bd6-3aaf-4ae6-a21d-743dc8f29ec1" name="Default" comment="Add organizer invites">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/groovy/muster/MusterRuntimeException.groovy" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/muster.iws" afterPath="$PROJECT_DIR$/muster.iws" />
     </list>
@@ -251,9 +253,7 @@
         <entry file="file://$PROJECT_DIR$/test/integration/muster/SpikeTests.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="14" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#16#48#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -261,7 +261,7 @@
       <file leaf-file-name="SpikeController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/muster/SpikeController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="584" selection-end="590" vertical-scroll-proportion="-15.652174">
+            <state line="24" column="44" selection-start="584" selection-end="590" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -273,7 +273,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="4" selection-start="174" selection-end="174" vertical-scroll-proportion="-4.431818">
+            <state line="13" column="4" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -282,7 +282,16 @@
       <file leaf-file-name="SecretaryService.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="50" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.04761905">
+            <state line="93" column="71" selection-start="2810" selection-end="2810" vertical-scroll-proportion="1.2952381">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusterRuntimeException.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/groovy/muster/MusterRuntimeException.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="57" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -294,7 +303,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="76" selection-end="76" vertical-scroll-proportion="-2.0454545">
+            <state line="6" column="6" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -318,7 +327,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="17" selection-start="163" selection-end="170" vertical-scroll-proportion="-3.0681818">
+            <state line="7" column="33" selection-start="139" selection-end="150" vertical-scroll-proportion="-2.3863637">
               <folding />
             </state>
           </provider>
@@ -343,8 +352,9 @@
         <option value="$PROJECT_DIR$/test/integration/muster/UtilTests.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/muster/Person.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/muster/Event.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy" />
+        <option value="$PROJECT_DIR$/src/groovy/muster/MusterRuntimeException.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy" />
       </list>
     </option>
@@ -573,14 +583,14 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="Grails.Grails tests:integration">
+  <component name="RunManager" selected="Grails.Grails:muster">
     <configuration default="false" name="SpikeTests.testSomething" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -817,7 +827,11 @@
       <created>1349573734072</created>
       <updated>1349573734072</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add organizer invites person&#10;Add organizer invite grooup">
+      <created>1349573948913</created>
+      <updated>1349573948913</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -834,11 +848,9 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32809773" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -846,10 +858,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29396325" sideWeight="0.65445024" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32809773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32809773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -890,7 +904,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add initial event services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add organizer invites person&#10;Add organizer invite grooup" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -908,6 +922,7 @@
     <MESSAGE value="Add valid person and password check" />
     <MESSAGE value="Shorten user password test" />
     <MESSAGE value="Add initial event services" />
+    <MESSAGE value="Add organizer invites person&#10;Add organizer invite grooup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -919,58 +934,32 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/integration/muster/CounterTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="157" selection-end="227" vertical-scroll-proportion="-7.826087">
-          <folding>
-            <element signature="e#16#48#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="0" selection-start="157" selection-end="227" vertical-scroll-proportion="-7.826087" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/muster/KeyException.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/groovy/muster/Util.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="23" selection-start="369" selection-end="369" vertical-scroll-proportion="0.93406594">
-          <folding />
-        </state>
+        <state line="17" column="23" selection-start="369" selection-end="369" vertical-scroll-proportion="0.93406594" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/integration/muster/UtilTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="23" selection-start="285" selection-end="285" vertical-scroll-proportion="0.3902439">
-          <folding>
-            <element signature="e#16#34#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="21" column="23" selection-start="285" selection-end="285" vertical-scroll-proportion="0.3902439" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/integration/muster/SpikeTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="14" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#16#48#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="35" column="14" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/muster/SpikeController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="584" selection-end="590" vertical-scroll-proportion="-15.652174">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="76" selection-end="76" vertical-scroll-proportion="-2.0454545">
+        <state line="24" column="44" selection-start="584" selection-end="590" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -980,17 +969,17 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="174" selection-end="174" vertical-scroll-proportion="-4.431818">
+        <state line="13" column="4" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="163" selection-end="170" vertical-scroll-proportion="-3.0681818">
+        <state line="6" column="6" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1005,9 +994,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="139" selection-end="150" vertical-scroll-proportion="-2.3863637">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/groovy/muster/MusterRuntimeException.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="57" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="50" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.04761905">
+        <state line="93" column="71" selection-start="2810" selection-end="2810" vertical-scroll-proportion="1.2952381">
           <folding />
         </state>
       </provider>

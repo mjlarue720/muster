@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ece1bd6-3aaf-4ae6-a21d-743dc8f29ec1" name="Default" comment="">
+    <list default="true" id="7ece1bd6-3aaf-4ae6-a21d-743dc8f29ec1" name="Default" comment="Add organizer invites">
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/muster/Event.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/muster/Event.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/muster/Person.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/muster/Person.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/muster.iws" afterPath="$PROJECT_DIR$/muster.iws" />
     </list>
@@ -283,10 +279,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecretaryService.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SecretaryService.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0">
+            <state line="42" column="50" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.04761905">
               <folding />
             </state>
           </provider>
@@ -304,13 +300,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Event.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Event.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/Event.groovy">
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="70" selection-start="484" selection-end="484" vertical-scroll-proportion="0.5880282">
+            <state line="17" column="70" selection-start="484" selection-end="484" vertical-scroll-proportion="-3.7954545">
               <folding />
             </state>
           </provider>
@@ -348,8 +344,8 @@
         <option value="$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/muster/Person.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/muster/Event.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy" />
       </list>
     </option>
   </component>
@@ -817,7 +813,11 @@
       <created>1349571467259</created>
       <updated>1349571467259</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add initial event services">
+      <created>1349573734072</created>
+      <updated>1349573734072</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -890,7 +890,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shorten user password test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial event services" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -907,6 +907,7 @@
     <MESSAGE value="Fixed packaging error in Util tests" />
     <MESSAGE value="Add valid person and password check" />
     <MESSAGE value="Shorten user password test" />
+    <MESSAGE value="Add initial event services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -994,19 +995,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/Event.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="70" selection-start="484" selection-end="484" vertical-scroll-proportion="0.5880282">
+        <state line="17" column="70" selection-start="484" selection-end="484" vertical-scroll-proportion="-3.7954545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="50" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.04761905">
           <folding />
         </state>
       </provider>

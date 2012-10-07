@@ -40,12 +40,12 @@ class SecretaryService {
   }
 
 
-  def void inviteGroup(Event event, AffinityGroup affinityGroup) {
+  def void organizerInviteGroup(Person organizer, Event event, AffinityGroup affinityGroup) {
     // Make sure a person has an invitation to the event
 
   }
 
-  def void invitePerson(Event event, Person person) {
+  def void organizerInvitePerson (Person organizer, Event event, Person person) {
     // Make sure person is invited to meeting
 
   }

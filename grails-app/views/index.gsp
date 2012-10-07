@@ -27,7 +27,7 @@
                     var uName = $(this).find('uName').text();
                     if(isLoginSuccessful="true") {
                       alert("Login is successful");
-                      var listEventUrl = "/muster/event/listEvent/userName=" + userName;
+                      var listEventUrl = "/muster/event/listUserEvents/userName=" + userName;
                       alert(listEventUrl);
                       window.location.href = listEventUrl;
                     }

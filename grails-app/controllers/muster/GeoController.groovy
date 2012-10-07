@@ -1,7 +1,5 @@
 package muster
 
-import alpha.Util
-
 class GeoController {
 
     def index() { }

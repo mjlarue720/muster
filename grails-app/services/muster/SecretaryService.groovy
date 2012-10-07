@@ -77,7 +77,13 @@ class SecretaryService {
     if (person == null){
       return new ArrayList<Event>()
     } else {
-      return Invite.findAllByPerson(person)
+        List<Event> listOfEvents = new ArrayList<Event>()
+        Invite.findAllByPerson(person).each {
+            Invite thisInvite = it
+            Event thisEvent = thisInvite.event
+            listOfEvents.add(thisEvent)
+        }
+        return listOfEvents
     }
   }
 

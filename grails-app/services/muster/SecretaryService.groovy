@@ -4,8 +4,7 @@ package muster
 class SecretaryService {
 
   def Boolean checkPerson(String name, String password){
-    Person person = Person.findByNameAndPassword(name,password)
-    return (person != null)
+    return (null != Person.findByNameAndPassword(name,password))
   }
 
 

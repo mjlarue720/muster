@@ -46,8 +46,28 @@ class SecretaryService {
   }
 
   def void invitePerson(Event event, Person person) {
+    // Make sure person is invited to meeting
 
   }
+
+  def List<Event> eventsForPerson(String name){
+    Person person = Person.findByName(name)
+    if (person == null){
+      return new ArrayList<Event>()
+    } else {
+      return Invite.findAllByPerson(person)
+    }
+  }
+
+  def List<Event> eventsForPerson(String name, String orgRole){
+    Person person = Person.findByName(name)
+    if (person == null){
+      return new ArrayList<Event>()
+    } else {
+      return Invite.findAllByPersonAndOrgRole(person)
+    }
+  }
+
 
 
 }

@@ -2,6 +2,9 @@ package muster
 
 class Invite {
 
+  static final String ORGANIZER = "organizer"
+  static final String INVITEE = "invitee"
+
    Person person
    Event event
    String orgRole

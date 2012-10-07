@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7ece1bd6-3aaf-4ae6-a21d-743dc8f29ec1" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/muster/Event.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/muster/Event.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/muster/Person.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/muster/Person.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/muster.iws" afterPath="$PROJECT_DIR$/muster.iws" />
     </list>
@@ -273,28 +277,52 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="23" selection-start="139" selection-end="139" vertical-scroll-proportion="-3.409091">
+            <state line="13" column="4" selection-start="174" selection-end="174" vertical-scroll-proportion="-4.431818">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecretaryService.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SecretaryService.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="64" selection-start="164" selection-end="164" vertical-scroll-proportion="0.2857143">
+            <state line="70" column="0" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Event.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PersonAlias.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="6" selection-start="76" selection-end="76" vertical-scroll-proportion="-2.0454545">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/Event.groovy">
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="16" selection-start="137" selection-end="137" vertical-scroll-proportion="-1.7045455">
+            <state line="17" column="70" selection-start="484" selection-end="484" vertical-scroll-proportion="0.5880282">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Invite.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="17" selection-start="163" selection-end="170" vertical-scroll-proportion="-3.0681818">
               <folding />
             </state>
           </provider>
@@ -314,12 +342,14 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/test/integration/muster/SpikeTests.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/domain/muster/Event.groovy" />
         <option value="$PROJECT_DIR$/grails-app/controllers/muster/SpikeController.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/muster/Util.groovy" />
         <option value="$PROJECT_DIR$/test/integration/muster/UtilTests.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/muster/Person.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy" />
         <option value="$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/muster/Event.groovy" />
       </list>
     </option>
   </component>
@@ -783,7 +813,11 @@
       <created>1349570960514</created>
       <updated>1349570960514</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Shorten user password test">
+      <created>1349571467259</created>
+      <updated>1349571467259</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -856,7 +890,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add valid person and password check" />
+    <option name="LAST_COMMIT_MESSAGE" value="Shorten user password test" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -872,6 +906,7 @@
     <MESSAGE value="Added first service class (Secretary) and integrated with intellij" />
     <MESSAGE value="Fixed packaging error in Util tests" />
     <MESSAGE value="Add valid person and password check" />
+    <MESSAGE value="Shorten user password test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -887,16 +922,6 @@
           <folding>
             <element signature="e#16#48#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/Event.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="137" selection-end="137" vertical-scroll-proportion="-1.7045455">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,19 +964,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/PersonAlias.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="76" selection-end="76" vertical-scroll-proportion="-2.0454545">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/Person.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="139" selection-end="139" vertical-scroll-proportion="-3.409091">
+        <state line="13" column="4" selection-start="174" selection-end="174" vertical-scroll-proportion="-4.431818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/Invite.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="163" selection-end="170" vertical-scroll-proportion="-3.0681818">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/muster/SecretaryService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="64" selection-start="164" selection-end="164" vertical-scroll-proportion="0.2857143">
+        <state line="70" column="0" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/muster/Event.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="70" selection-start="484" selection-end="484" vertical-scroll-proportion="0.5880282">
           <folding />
         </state>
       </provider>

@@ -2,6 +2,8 @@ package muster
 
 import org.junit.*
 
+import static muster.Util.*
+
 class UtilTests {
 
   @Before
@@ -17,7 +19,7 @@ class UtilTests {
   @Test
   void testSimpleCommand() {
     String cmd = "pwd"
-    String result = Util.execute(cmd)
+    String result = execute(cmd)
     println("simpleCommand")
     println(result)
     assert (result != null)
@@ -27,7 +29,7 @@ class UtilTests {
   void testPipeCommand() {
     String cmd = "/usr/bin/python"
     String args = "print('hello world')\nprint('goodbye, cruel world!')"
-    String result = Util.executePipe(cmd, args)
+    String result = executePipe(cmd, args)
     println("pipeCommand")
     println(result)
     assert (result.startsWith("hello"))

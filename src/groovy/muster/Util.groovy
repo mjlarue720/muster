@@ -1,4 +1,4 @@
-package alpha
+package muster
 
 import groovy.json.JsonSlurper
 /**

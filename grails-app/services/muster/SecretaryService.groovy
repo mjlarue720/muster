@@ -3,6 +3,11 @@ package muster
 
 class SecretaryService {
 
+  def Boolean checkPerson(String name, String password){
+    Person person = Person.findByNameAndPassword(name,password)
+    return (person != null)
+  }
+
 
   def Event createEvent(String name, String description, Date eventDate, String location, Integer quorum){
 
@@ -32,13 +37,18 @@ class SecretaryService {
       }
       KeyException("Validation error " + name + ":" + eventDate.toString())
     }
-
-
     return event
   }
 
 
-    def serviceMethod() {
+  def void inviteGroup(Event event, AffinityGroup affinityGroup) {
+    // Make sure a person has an invitation to the event
 
-    }
+  }
+
+  def void invitePerson(Event event, Person person) {
+
+  }
+
+
 }
